@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eviak.Core
+namespace Eviak.Core.Model.Fields
 {
-    public class Class1
+    public class FieldMeta
     {
+        
     }
 }

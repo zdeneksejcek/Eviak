@@ -9,7 +9,7 @@ namespace Eviak.Core.Model.Nodes
 {
     public class FolderNode : Node
     {
-        public FolderNode(SysName name, Node parent) : base(name, parent)
+        public FolderNode(SysName name) : base(name)
         {
 
         }

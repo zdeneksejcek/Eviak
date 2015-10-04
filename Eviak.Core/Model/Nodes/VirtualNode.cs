@@ -9,7 +9,7 @@ namespace Eviak.Core.Model.Nodes
 {
     public class VirtualNode : Node
     {
-        public VirtualNode(SysName name, Node parent) : base(name, parent)
+        public VirtualNode(SysName name) : base(name)
         {
             
         }

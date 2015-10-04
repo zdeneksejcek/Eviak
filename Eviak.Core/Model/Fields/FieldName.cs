@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Eviak.Core.Model.Fields
 {
-    public class SysName : Field
+    public sealed class FieldName : SysName
     {
-        public string Name { get; private set; }
-
-        public SysName(string name)
+        public FieldName(string name) : base(name)
         {
-            this.Name = name;
+
         }
     }
 }

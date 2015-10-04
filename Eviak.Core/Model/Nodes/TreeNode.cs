@@ -9,9 +9,9 @@ namespace Eviak.Core.Model.Nodes
 {
     public class TreeNode : Node
     {
-        public TreeNode(SysName name) : base(name, null)
+        public TreeNode(SysName name) : base(name)
         {
-
+            
         }
     }
 }

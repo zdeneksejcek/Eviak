@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace Eviak.Core.Model.Fields
 {
-    public class SysName : Field
+    public class TextField : Field
     {
-        public string Name { get; private set; }
-
-        public SysName(string name)
-        {
-            this.Name = name;
-        }
     }
 }

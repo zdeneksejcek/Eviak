@@ -10,7 +10,7 @@ namespace Eviak.Core.Model.Trees
     {
         public static Tree Build(ITreePersistor persistor)
         {
-            return new Tree();
+            return null;
         }
     }
 }

@@ -9,13 +9,21 @@ namespace Eviak.Core.Model.Nodes
 {
     public abstract class Node
     {
-        public SysName Name { get; private set; }
-        public Node Parent { get; private set; }
+        private NodeContent Content { get; set; }
 
-        public Node(SysName name, Node parent)
+        public Id Id { get; private set; }
+
+        public SysName Name { get; private set; }
+
+        public Node(SysName name)
         {
+            this.Content = new NodeContent();
             this.Name = name;
-            this.Parent = parent;
+        }
+
+        public Node(NodeContent content)
+        {
+            
         }
     }
 }

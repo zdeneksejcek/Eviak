@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eviak.Core.Model.Templates
+namespace Eviak.Core.Model.Fields
 {
-    public class TemplateNode
+    public class IdField : Field
     {
-        
+
     }
 }

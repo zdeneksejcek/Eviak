@@ -45,18 +45,25 @@
     <Compile Include="Model\Fields\FieldName.cs" />
     <Compile Include="Model\Fields\FieldsMeta.cs" />
     <Compile Include="Model\Fields\Id.cs" />
+    <Compile Include="Model\Fields\IdField.cs" />
     <Compile Include="Model\Fields\NumberField.cs" />
+    <Compile Include="Model\Fields\SysNameField.cs" />
     <Compile Include="Model\Fields\TextField.cs" />
     <Compile Include="Model\Fields\SysName.cs" />
+    <Compile Include="Model\Fields\UnknownFieldType.cs" />
+    <Compile Include="Model\Nodes\Convertor.cs" />
     <Compile Include="Model\Nodes\NodeContentBuilder.cs" />
     <Compile Include="Model\Nodes\FolderNode.cs" />
     <Compile Include="Model\Nodes\Node.cs" />
     <Compile Include="Model\Nodes\NodeContent.cs" />
+    <Compile Include="Model\Nodes\NodeData.cs" />
     <Compile Include="Model\Nodes\NodeMeta.cs" />
     <Compile Include="Model\Nodes\RootNode.cs" />
     <Compile Include="Model\Nodes\TreeNode.cs" />
     <Compile Include="Model\Nodes\VirtualNode.cs" />
-    <Compile Include="Model\Templates\TemplateNode.cs" />
+    <Compile Include="Model\Templates\BaseTemplate.cs" />
+    <Compile Include="Model\Templates\Template.cs" />
+    <Compile Include="Model\Templates\TemplateField.cs" />
     <Compile Include="Model\Trees\ITreePersistor.cs" />
     <Compile Include="Model\Trees\Tree.cs" />
     <Compile Include="Model\Trees\TreeBuilder.cs" />
@@ -65,12 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\Security\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Model\Templates\Data\template.xml" />
-    <Content Include="Model\Trees\Data\root.xml" />
-    <Content Include="Model\Trees\Data\site.xml" />
-    <Content Include="Model\Trees\Data\web.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

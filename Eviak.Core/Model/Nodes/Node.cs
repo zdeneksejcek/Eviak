@@ -11,19 +11,35 @@ namespace Eviak.Core.Model.Nodes
     {
         private NodeContent Content { get; set; }
 
-        public Id Id { get; private set; }
+        public Id Id {
+            get {
+                return Content.Get<Id>(
+                    new FieldName(FieldName.Id));
+            }
+        }
 
-        public SysName Name { get; private set; }
+        public SysName Name
+        {
+            get
+            {
+                return Content.Get<SysName>(
+                    new FieldName(FieldName.Id));
+            }
+        }
+
+        public T GetValue<T>()
+        {
+            return default(T);
+        }
 
         public Node(SysName name)
         {
             this.Content = new NodeContent();
-            this.Name = name;
         }
 
         public Node(NodeContent content)
         {
-            
+
         }
     }
 }

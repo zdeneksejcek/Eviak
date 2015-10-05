@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eviak.Core.Model.Nodes
+namespace Eviak.Core.Model.Fields
 {
-    internal class NodeMeta
+    public class UnknownFieldType : Exception
     {
-
     }
 }

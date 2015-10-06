@@ -27,6 +27,8 @@ namespace Eviak.Core.Model.Nodes
             }
         }
 
+        public Variant Variant { get; private set; }
+
         public T GetValue<T>()
         {
             return default(T);

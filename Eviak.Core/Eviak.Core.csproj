@@ -56,7 +56,9 @@
     <Compile Include="Model\Nodes\FolderNode.cs" />
     <Compile Include="Model\Nodes\Node.cs" />
     <Compile Include="Model\Nodes\NodeContent.cs" />
-    <Compile Include="Model\Nodes\NodeData.cs" />
+    <Compile Include="Model\Nodes\Variant.cs" />
+    <Compile Include="Model\Nodes\Version.cs" />
+    <Compile Include="Model\Nodes\VersionedVariantData.cs" />
     <Compile Include="Model\Nodes\NodeMeta.cs" />
     <Compile Include="Model\Nodes\RootNode.cs" />
     <Compile Include="Model\Nodes\TreeNode.cs" />
@@ -64,6 +66,9 @@
     <Compile Include="Model\Templates\BaseTemplate.cs" />
     <Compile Include="Model\Templates\Template.cs" />
     <Compile Include="Model\Templates\TemplateField.cs" />
+    <Compile Include="Model\Trees\CacheKey.cs" />
+    <Compile Include="Model\Trees\InMemoryCache.cs" />
+    <Compile Include="Model\Trees\ITreeCache.cs" />
     <Compile Include="Model\Trees\ITreePersistor.cs" />
     <Compile Include="Model\Trees\Tree.cs" />
     <Compile Include="Model\Trees\TreeBuilder.cs" />
@@ -72,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\Security\" />
+    <Folder Include="Persistence\MsSql\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -12,7 +12,7 @@ namespace Eviak.Host
     {
         static void Main(string[] args)
         {
-            var tree = TreeBuilder.Build(null);
+            //var tree = TreeBuilder.Build(null);
         }
     }
 }

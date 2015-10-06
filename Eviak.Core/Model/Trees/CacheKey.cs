@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eviak.Core.Model.Fields
+namespace Eviak.Core.Model.Trees
 {
-    public abstract class Field
+    public class CacheKey
     {
+        public CacheKey()
+        {
 
+        }
     }
 }

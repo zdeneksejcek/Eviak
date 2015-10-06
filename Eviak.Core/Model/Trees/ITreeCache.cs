@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Eviak.Core.Model.Trees
 {
-    public class TreeBuilder
+    public interface ITreeCache
     {
-        public static Tree Build(ITreePersistor persistor, ITreeCache cache)
-        {
-            return null;
-        }
+        void Put(CacheKey key, Nodes.Node node);
+        void Get(CacheKey key);
+        void Remove(CacheKey key);
     }
 }

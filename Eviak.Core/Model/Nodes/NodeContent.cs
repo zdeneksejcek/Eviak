@@ -10,26 +10,26 @@ namespace Eviak.Core.Model.Nodes
     public class NodeContent
     {
         private NodeMeta Meta { get; set; }
-        private NodeData Data { get; set; }
+        private VersionedVariantData Data { get; set; }
 
         internal T Get<T>(FieldName name)
         {
-            var value = this.Data[name];
+            
 
             return default(T);
         }
 
         internal void Set<T>(FieldName name, T value)
         {
-            this.Data[name] = value.ToString();
+            //this.Data[name] = value.ToString();
         }
 
         internal NodeContent()
         {
-            this.Data = new NodeData();
+            //this.Data = new NodeData();
         }
 
-        internal NodeContent(NodeData data, NodeMeta meta)
+        internal NodeContent(VersionedVariantData data, NodeMeta meta)
         {
             this.Data = data;
             this.Meta = meta;
